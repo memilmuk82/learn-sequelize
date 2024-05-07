@@ -35,7 +35,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
 // URL-encoded 형식 요청 본문 파싱을 위한 미들웨어 추가
-app.use(express.urlencoded({ extend: false}));
+app.use(express.urlencoded({ extended: false }));
 
 // 라우터가 없는 경우 404 에러를 발생시키는 미들웨어 추가
 app.use((req, res, next) => {
