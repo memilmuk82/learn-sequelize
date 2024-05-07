@@ -27,7 +27,7 @@ User.initiate(sequelize);  // User 모델을 초기화하고 연결 설정을 �
 Comment.initiate(sequelize); // Comment 모델을 초기화하고 연결 설정을 전달하여 데이터베이스와 연결
 
 User.associate(db); // User 모델과 다른 모델 간의 관계 설정
-Commenbt.associate(db); // Comment 모델과 다른 모델 간의 관계 설정
+Comment.associate(db); // Comment 모델과 다른 모델 간의 관계 설정
 
 // 데이터베이스 객체를 내보냄 -> 이 모듈을 다른 파일에서 가져와 데이터베이스 연결을 사용할 수 있음.
 module.exports = db;
