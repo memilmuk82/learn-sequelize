@@ -15,8 +15,11 @@ class User extends Sequelize.Model {
                 unique: true, // 종복 허용하지 않음.
             },
             age: { // 나이 속성 정의
-                type: Sequelize.INTEGER.UNSIGNED, // 부호 없는 정수 타입
+                type: Sequelize.INTEGER, // 정수 타입
                 allowNull: false, // null 허용하지 않음.
+                validate: {
+                    min: 0 // 음수가 아닌 값을 강제하는 유효성 검사 추가
+                },
             },
             married: { // 결혼 여부 속성 정의
                 type: Sequelize.BOOLEAN, // 부울 타입(true/false)
