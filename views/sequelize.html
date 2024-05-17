@@ -23,22 +23,22 @@
     <br>
     <table id="user-list">
         <thead>
-        <tr>
-        <th>아이디</th>
-        <th>이름</th>
-        <th>나이</th>
-        <th>결혼여부</th>
-        </tr>
+            <tr>
+                <th>아이디</th>
+                <th>이름</th>
+                <th>나이</th>
+                <th>결혼여부</th>
+            </tr>
         </thead>
         <tbody>
-        {% for user in users %}
-        <tr>
-            <td>{{user.id}}</td>
-            <td>{{user.name}}</td>
-            <td>{{user.age}}</td>
-            <td>{{ '기혼' if user.married else '미혼'}}</td>
-        </tr>
-        {% endfor %}
+            {% for user in users %}
+            <tr>
+                <td>{{user.id}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.age}}</td>
+                <td>{{ '기혼' if user.married else '미혼'}}</td>
+            </tr>
+            {% endfor %}
         </tbody>
     </table>
     <br>
@@ -55,13 +55,13 @@
     <br>
     <table id="comment-list">
         <thead>
-        <tr>
-        <th>아이디</th>
-        <th>작성자</th>
-        <th>댓글</th>
-        <th>수정</th>
-        <th>삭제</th>
-        </tr>
+            <tr>
+                <th>아이디</th>
+                <th>작성자</th>
+                <th>댓글</th>
+                <th>수정</th>
+                <th>삭제</th>
+            </tr>
         </thead>
         <tbody></tbody>
     </table>
